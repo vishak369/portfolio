@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel = "stylesheet"  type = "text/css" href = "index.css" >
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container contact111">
+        <form id="goodboy" action="">
+          <label for="fname"> Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+    
+          <label for="lname">Email</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your Email">
+    
+          <label for="lname">Subject</label>
+          <input type="text" id="lname" name="lastname" placeholder="subject">
+    
+    
+      
+          <label for="subject">Message</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+         
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+    
+      
+    <script>
+        
+$("#goodboy").submit((e)=>{
+      e.preventDefault()
+      $.ajax({
+          url:"https://script.google.com/macros/s/AKfycbxCpGC_Osf8DAL8jJugdkzjBWpsItGKSzMwbXyVmZV5NRktj67ma-9GeTrHSIFl-XD7/exec",
+          data:$("#goodboy").serialize(),
+          method:"post",
+          success:function (response){
+              alert("Form submitted successfully")
+              window.location.reload()
+              //window.location.href="https://google.com"
+          },
+          error:function (err){
+              alert("Something Error")
+
+          }
+      })
+  })
+    </script>
+</body>
+</html>

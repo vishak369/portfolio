@@ -1,0 +1,262 @@
+.vv{
+    font-family: sans-serif;
+}
+
+
+.gradient-text {
+    /* Fallback: Set a background color. */
+    background-color: rgb(11, 40, 204);
+    
+    /* Create the gradient. */
+    background-image: linear-gradient(45deg, #f0f3f5, #656664);
+    
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+    color:rgb(71, 71, 71);
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+   
+   
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    */
+  } 
+
+
+
+  .callus{
+    position: fixed;
+    bottom: 25px;
+    left: 8px;
+    width: 43px;
+    height: 40px;
+    background: #ffbb13;
+    border-radius: 50px;
+    text-align: justify;
+    padding-top: 4px;
+    color: #082f4e;
+    /* box-shadow: 4px 4px 5px 0 rgb(50 50 50 / 20%); */
+    z-index: 99999;
+    
+}
+
+
+  *{
+      font-family: Gill sans, sans-serif;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+
+
+
+  h1{
+      text-align: center;
+
+  }
+
+  h3{
+      margin: 5px;
+  }
+
+
+  .skills{
+    
+      margin: 60px auto;
+      color: 20px;
+      box-shadow: 1 14px 28px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+  }
+
+
+  .bar:hover{
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+  }
+  
+  .bar span{
+      height: 20px;
+      float: left;
+      background: linear-gradient(135deg, rgb(147, 211, 200)0%, rgba(38, 224, 54, 0.61)100%);
+
+      /* background: linear-gradient(135deg, rgb(167, 204, 209)0%, rgb(95, 226, 134)100%); */
+
+
+  }
+
+  .Linux{
+      width: 81%;
+      animation: Linux 1.2s;
+  }
+  .Jenkins{
+    width: 70%;
+    animation: Jenkins 1.2s;
+}
+.Ansible{
+    width: 40%;
+    animation: Ansible 1.2s;
+}
+.AWS{
+    width: 60%;
+    animation: AWS 1.2s;
+}
+.Docker{
+    width: 77%;
+    animation: Docker 1.2s;
+}
+.Python{
+    width: 70%;
+    animation: Python 1.2s;
+}
+
+
+@keyframes Linux{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+@keyframes Jenkins{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 20%;
+    }
+}
+@keyframes Ansible{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+@keyframes AWS{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes Docker{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 39%;
+    }
+}
+@keyframes Python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+
+
+
+
+blockquote {
+    font-family: Georgia, serif;
+    position: relative;
+    margin: 0.5em;
+    padding: 0.5em 2em 0.5em 3em;
+  }
+  /* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
+  blockquote:before {
+    font-family: Georgia, serif;
+    position: absolute;
+    font-size: 4em;
+    line-height: 1;
+    top: 0;
+    left: 0;
+    content: "\201C";
+  }
+  blockquote:after {
+    font-family: Georgia, serif;
+    position: absolute;
+   /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
+    float:right;
+    font-size:4em;
+    line-height: 1;
+    right:0;
+    bottom:-0.5em;
+    content: "\201D";
+  }
+  blockquote footer {
+    padding: 0 2em 0 0;
+    text-align:right;
+  }
+  blockquote cite:before {
+    content: "\2013";
+  }
+
+
+/* 
+/* CONTACT FORM */  
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .contact111 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+ 
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+
+
+
+
+
+ 
