@@ -85,7 +85,7 @@
   .bar span{
       height: 20px;
       float: left;
-      background: linear-gradient(135deg, rgb(147, 211, 200)0%, rgba(38, 224, 54, 0.61)100%);
+      background: linear-gradient(135deg, rgb(204, 243, 211)0%, rgba(232, 247, 70, 0.61)100%);
 
       /* background: linear-gradient(135deg, rgb(167, 204, 209)0%, rgb(95, 226, 134)100%); */
 
@@ -93,23 +93,23 @@
   }
 
   .Linux{
-      width: 81%;
+      width: 88%;
       animation: Linux 1.2s;
   }
   .Jenkins{
-    width: 70%;
+    width: 84%;
     animation: Jenkins 1.2s;
 }
 .Ansible{
-    width: 40%;
+    width: 59%;
     animation: Ansible 1.2s;
 }
 .AWS{
-    width: 60%;
+    width: 69%;
     animation: AWS 1.2s;
 }
 .Docker{
-    width: 77%;
+    width: 85%;
     animation: Docker 1.2s;
 }
 .Python{
